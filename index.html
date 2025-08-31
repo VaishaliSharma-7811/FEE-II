@@ -23,6 +23,40 @@
         rel="stylesheet">
 </head>
 
+<style>
+    .searchBar {
+        padding-top: 2rem;
+        padding-left: 28rem;
+    }
+
+    .searchBar input {
+        border: 0.5px solid rgb(219, 219, 251);
+        border-radius: 1rem;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        font-size: 1rem;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .searchBar input:hover {
+        background-color: rgb(245, 215, 215);
+    }
+
+    
+
+    .searchBar button {
+        border-radius: 1rem;
+        background-color: #f1bbbb;
+        margin-right: 1rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        transition: background-color 0.3s ease-in-out ;
+    }
+
+    .searchBar button:hover {
+        background-color: rgb(251,111,111) ;
+    }
+</style>
+
 <body>
     <nav class="top-nav">
         <div class="icon-div">
@@ -53,6 +87,13 @@
             </div>
         </div>
     </nav>
+    <div class="searchBar">
+         <div>
+            <label for="Search"></label>
+            <button > <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            <input placeholder="Search Destinations" id="search">
+         </div>
+    </div>
     <hr>
     <!-- <h3 >All listings</h3> -->
     <div class="row ">
