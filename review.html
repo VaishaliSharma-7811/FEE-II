@@ -1,143 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reviews</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-       
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,600&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reviews</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="index.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <style>
-    h6 {
-        opacity: 0.7;
-        margin-top: 2.5rem;
-    }
+  h6 {
+    opacity: 0.7;
+    margin-top: 2.5rem;
+  }
 
-    .star-rating input {
-  display: none;
-}
+  .star-rating input {
+    display: none;
+  }
 
-.star-rating {
-  direction: rtl; /* Right-to-left for intuitive star filling */
-  display: inline-flex;
-  gap: 5px;
-}
+  .star-rating {
+    direction: rtl;
+    /* Right-to-left for intuitive star filling */
+    display: inline-flex;
+    gap: 5px;
+  }
 
-.star-rating input {
-  display: none;
-}
+  .star-rating input {
+    display: none;
+  }
 
-.star-rating label {
-  font-size: 40px;
-  color: lightgray;
-  cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+  .star-rating label {
+    font-size: 40px;
+    color: lightgray;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
 
-.star-rating label:hover,
-.star-rating label:hover ~ label {
-  color: gold;
-  transform: scale(1.2);
-}
+  .star-rating label:hover,
+  .star-rating label:hover~label {
+    color: gold;
+    transform: scale(1.2);
+  }
 
-.star-rating input:checked ~ label {
-  color: gold;
-}
+  .star-rating input:checked~label {
+    color: gold;
+  }
 
-.textarea {
-  margin-top: 1.5rem;
-   
-}
+  .textarea {
+    margin-top: 1.5rem;
 
-textarea {
-  margin-left: 9rem;
-   border: 0.5px solid rgb(219, 219, 251);
-   border-radius: 1rem;
+  }
 
-}
+  textarea {
+    margin-left: 9rem;
+    border: 0.5px solid rgb(219, 219, 251);
+    border-radius: 1rem;
 
-.SubmitBtn button{
-  border: 0.5px solid rgb(219, 219, 251);
-  border-radius: 1rem;
-  background-color: rgb(251, 111, 111);
-  color: #fff;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-top: 1rem;
-}
+  }
 
-
+  .SubmitBtn button {
+    border: 0.5px solid rgb(219, 219, 251);
+    border-radius: 1rem;
+    background-color: rgb(251, 111, 111);
+    color: #fff;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
 </style>
-<body>
-    <nav class="top-nav">
-        <div class="icon-div">
-            <a class="navbar-brand div1" href="/"><i  class="fa-regular fa-compass"></i></a>
-            <p class="div1 title">DesiStay</p>
-        </div>
 
-        <div class="filters">
-            <div class="filter">
-                <div><i class="fa-solid fa-house"></i></div>
-                <p class="tags"><a href="/">Homes</a></p>
-            </div>
-            <div class="filter">
-                <div id="icon"><i class="fa-solid fa-star"></i></div>
-                <p class="tags"><a href="review.html" >Reviews</a></p>
-            </div>
-            <div class="filter">
-                <div><i class="fa-solid fa-bell-concierge"></i></div>
-                <p>Services</p>
-            </div>
-        </div>
-        <div class="login">
-            <div class="login-Ele">
-                <a>airbnb your home</a>
-            </div>
-            <div class="login-Ele">
-                <a href="login.html">login</a>
-            </div>
+<body>
+  <nav class="top-nav">
+    <div class="icon-div">
+      <a class="navbar-brand div1" href="/"><i class="fa-regular fa-compass"></i></a>
+      <p class="div1 title">DesiStay</p>
+    </div>
+
+    <div class="filters">
+      <div class="filter">
+        <div><i class="fa-solid fa-house"></i></div>
+        <p class="tags"><a href="/">Homes</a></p>
       </div>
-    </nav>
-    <hr>
-    <h2 class="  offset-2 login-Ele review-heading ">Leave a Review</h2>
-    <div>
+      <div class="filter">
+        <div id="icon"><i class="fa-solid fa-star"></i></div>
+        <p class="tags"><a href="review.html">Reviews</a></p>
+      </div>
+      <div class="filter">
+        <div><i class="fa-solid fa-bell-concierge"></i></div>
+        <p>Services</p>
+      </div>
+    </div>
+    <div class="login">
+      <div class="login-Ele">
+        <a>airbnb your home</a>
+      </div>
+      <div class="login-Ele">
+        <a href="login.html">login</a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <h2 class="  offset-2 login-Ele review-heading ">Leave a Review</h2>
+  <div>
     <h6 class="review-heading">Rating</h6>
     <form class="star-rating review-heading">
-  <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
-  <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
-  <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
-  <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
-  <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
-</form>
-<hr>
-<form action="index.html">
-    <h6 class="review-heading ">Comments</h6>
-    <div class="textarea">
-      <label for="review">
-    <textarea  id="review" name="review" class="review-heading " rows="5" cols="35" placeholder="Leave a Review" >
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </form>
+    <hr>
+    <form action="index.html">
+      <h6 class="review-heading ">Comments</h6>
+      <div class="textarea">
+        <label for="review">
+          <textarea id="review" name="review" class="review-heading " rows="5" cols="35" placeholder="Leave a Review">
 
     </textarea>
-      
-      </label>
-    </div>
-    
-    <div class="SubmitBtn review-heading">
-           <button>
-            Submit
-           </button>
-    </div>
+
+        </label>
+      </div>
+
+      <div class="SubmitBtn review-heading">
+        <button>
+          Submit
+        </button>
+      </div>
     </form>
-    
-    </div>
+
+  </div>
 </body>
+
 </html>
