@@ -1,0 +1,247 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0; /* important to remove default body margin */
+  padding: 0;
+}
+
+p {
+  font-weight: 900;
+  
+}
+
+/* Top navigation container */
+.top-nav {
+  /* position: sticky;
+  top: 0; */
+ 
+
+ /* Add this */
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 1rem ;
+  background-color: #fff;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  /* Remove justify-content: space-between or center */
+}
+
+.filters {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+/* Left section with icon and text */
+.icon-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Individual elements inside icon-div */
+.div1 {
+  margin: 0.5rem;
+  color: red;
+
+  
+
+}
+
+.title {
+  font-size: medium;
+  /* font-weight: 600; */
+  
+  font-style: normal;
+  font-family: "Plus Jakarta Sans, sans-serif";
+}
+
+/* Filters section */
+
+
+/* Each filter item */
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: underline solid red 3px;
+  transform: scale(1.2);
+}
+
+.filter div i {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+/* Branding style */
+.navbar-brand {
+  color: red;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+  }
+}
+
+.login {
+    margin-left: auto;
+    display: flex;
+   
+}
+
+.login-Ele {
+  margin: 1rem;
+  
+}
+
+.login-Ele a {
+    color: black;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+        /* height: 610px; */
+        width: 16rem;
+        /* border: rgba(0, 0, 0, 0.826) solid 2px; */
+        /* border: rgb(184, 184, 242) solid 2px; */
+        border-radius: 35px;
+        margin: 0.5rem;
+        padding: 0.3rem;
+    }
+
+
+@media(max-width: 400px) {
+        #row {
+            flex-wrap: wrap;
+        }
+    }  
+    
+img {
+        
+        width: 100%;
+        height: 35vh;
+        
+        border-radius: 35px;
+       
+    }  
+    
+.f-info-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.f-social-links i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-social-links, .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+
+
+.login-input {
+  padding: 2.2rem;
+  /* font-family: ; */
+}
+
+.login-button {
+    border-radius: 0.8rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    padding: 6px;
+    background-color: rgb(12, 169, 117);
+    color: #fff;
+}
+
+.login-input input {
+  border-radius: 9px;
+  padding-right: 32rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* border: blue 0.2rem; */
+  border: 1.2px solid rgb(217, 217, 219);
+}
+
+.loginBtn {
+  padding-left: 2.5rem;
+}
+
+.login-input label {
+  padding-bottom: 0.2rem;
+}
+
+.tags a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+.review-heading {
+  /* align-items: center; */
+  /* margin-left: auto; */
+  padding-left: 10rem;
+}
+
+.login-input input:hover {
+  background-color: rgb(223, 223, 243);
+  border: 1.2px solid rgb(217, 217, 219);
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
