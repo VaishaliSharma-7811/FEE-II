@@ -3,26 +3,33 @@ body {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: italic;
-  margin: 0; /* important to remove default body margin */
+  margin: 0;
+  /* important to remove default body margin */
   padding: 0;
 }
 
 p {
   font-weight: 900;
-  
+
+}
+
+.DesiStay {
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
 }
 
 /* Top navigation container */
 .top-nav {
   /* position: sticky;
   top: 0; */
- 
 
- /* Add this */
+
+  /* Add this */
   display: flex;
   position: relative;
   align-items: center;
-  padding-top: 1rem ;
+  padding-top: 1rem;
   background-color: #fff;
   flex-wrap: wrap;
   width: 100%;
@@ -52,14 +59,14 @@ p {
   margin: 0.5rem;
   color: red;
 
-  
+
 
 }
 
 .title {
   font-size: medium;
   /* font-weight: 600; */
-  
+
   font-style: normal;
   font-family: "Plus Jakarta Sans, sans-serif";
 }
@@ -103,23 +110,23 @@ p {
   .filters {
     justify-content: flex-start;
     flex-wrap: wrap;
-    
+
   }
 }
 
 .login {
-    margin-left: auto;
-    display: flex;
-   
+  margin-left: auto;
+  display: flex;
+
 }
 
 .login-Ele {
   margin: 1rem;
-  
+
 }
 
 .login-Ele a {
-    color: black;
+  color: black;
   text-decoration: none;
 }
 
@@ -132,54 +139,57 @@ p {
 }
 
 .card {
-        /* height: 610px; */
-        width: 16rem;
-        /* border: rgba(0, 0, 0, 0.826) solid 2px; */
-        /* border: rgb(184, 184, 242) solid 2px; */
-        border-radius: 35px;
-        margin: 0.5rem;
-        padding: 0.3rem;
-    }
+  /* height: 610px; */
+  width: 16rem;
+  /* border: rgba(0, 0, 0, 0.826) solid 2px; */
+  /* border: rgb(184, 184, 242) solid 2px; */
+  border-radius: 35px;
+  margin: 0.5rem;
+  padding: 0.3rem;
+}
 
 
 @media(max-width: 400px) {
-        #row {
-            flex-wrap: wrap;
-        }
-    }  
-    
+  #row {
+    flex-wrap: wrap;
+  }
+}
+
 img {
-        
-        width: 100%;
-        height: 35vh;
-        
-        border-radius: 35px;
-       
-    }  
-    
+
+  width: 100%;
+  height: 35vh;
+
+  border-radius: 35px;
+
+}
+
 .f-info-links a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .f-social-links i {
-    font-size: 1.2rem;
-    margin-right: 1rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
 }
-.f-social-links, .f-info-brand {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.f-social-links,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .f-info {
-    text-align: center;
-    height: 8rem;
-    background-color: #ebebeb;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
 
 }
 
@@ -190,12 +200,12 @@ img {
 }
 
 .login-button {
-    border-radius: 0.8rem;
-    /* padding-left: 1rem;
+  border-radius: 0.8rem;
+  /* padding-left: 1rem;
     padding-right: 1rem; */
-    padding: 6px;
-    background-color: rgb(12, 169, 117);
-    color: #fff;
+  padding: 6px;
+  background-color: rgb(12, 169, 117);
+  color: #fff;
 }
 
 .login-input input {
@@ -231,17 +241,3 @@ img {
   background-color: rgb(223, 223, 243);
   border: 1.2px solid rgb(217, 217, 219);
 }
-
-
-
-
-
-
-
-
-
-    
-
-
-
-

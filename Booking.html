@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiStay</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 12px 30px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .icon-div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-div .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .filters {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .filter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter div {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 4px;
+        }
+
+        .tags a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .filter:hover div,
+        .filter:hover a {
+            color: #ff5a5f;
+            /* Airbnb style red hover */
+        }
+
+        .login {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .login-Ele a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .login-Ele a:hover {
+            color: #ff5a5f;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #fff;
+            width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .card h2 {
+            margin: 0 0 15px;
+            font-size: 22px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .owner {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .details {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .btn-reverse {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            background: linear-gradient(45deg, #ff6b6b, #ffb347);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-reverse:hover {
+            background: linear-gradient(45deg, #ff4444, #ff9933);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="top-nav">
+        <div class="icon-div">
+            <a class="navbar-brand div1" href="/"><i class="fa-regular fa-compass"></i></a>
+            <p class="div1 title">DesiStay</p>
+        </div>
+
+        <div class="filters">
+            <div class="filter">
+                <div><i class="fa-solid fa-house"></i></div>
+                <p class="tags"><a href="/">Homes</a></p>
+            </div>
+            <div class="filter">
+                <div><i class="fa-solid fa-star"></i></div>
+                <p class="tags"><a href="review.html">Reviews</a></p>
+            </div>
+            <div class="filter">
+                <div><i class="fa-solid fa-bell-concierge"></i></div>
+                <p class="tags">Services</p>
+            </div>
+        </div>
+
+        <div class="login">
+            <div class="login-Ele">
+                <a href="#">Host your home</a>
+            </div>
+            <div class="login-Ele">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="card">
+            <h2>Modern Loft in Downtown</h2>
+            <img src="https://picsum.photos/800/400?random=1" alt="Loft Image">
+
+            <p class="owner">Owned By: simran anand</p>
+            <p class="details">Stay in the heart of the city in this stylish loft apartment. Perfect for urban
+                explorers!</p>
+            <p class="details">Stay in the heart of the city in this stylish loft apartment. Perfect for urban
+                explorers!</p>
+
+            <p class="price">₹12,000</p>
+            <p class="location">New York City<br>United States</p>
+
+            <a href="#" class="btn-reverse">Reserve</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
