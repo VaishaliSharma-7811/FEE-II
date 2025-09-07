@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiStay - Property</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* General Reset */
+       
+
+
+        
+
+        /* Property Card Section */
+        .property-container {
+            display: flex;
+            justify-content: center;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .property-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 500px;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .property-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .property-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .property-info {
+            padding: 1.2rem;
+        }
+
+        .property-info h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .property-info p {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .property-info .price {
+            font-weight: bold;
+            color: #e63946;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .reserve-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #e63946;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .reserve-btn:hover {
+            background: #d62828;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Logo">
+            DesiStay
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-house"></i> Homes</a></li>
+                <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="service.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="host.html" class="host">Host your home</a>
+            <a href="login.html" class="login">Login</a>
+        </div>
+    </header>
+
+    <!-- Property Card -->
+    <section class="property-container">
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Modern Loft">
+            <div class="property-info">
+                <h2>Mountain Retreat</h2>
+                <p class="owner"><strong>Owned By:</strong> Simran Anand</p>
+                <p class="details">Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.</p>
+                <p class="price">₹20,000</p>
+                <p class="location">New York City, United States</p>
+                <a href="#" class="reserve-btn">Book</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© DesiStay Private Limited</p>
+        <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>
+

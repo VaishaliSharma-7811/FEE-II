@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Your Home- DesiStay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      
+       
+
+        
+
+        /* Form Container */
+        .form-container {
+            max-width: 600px;
+            margin: 3rem auto 5rem;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 0.8rem 0 0.3rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="url"] {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+            font-size: 14px;
+        }
+
+        .row {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .row input {
+            flex: 1;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 0.8rem;
+            background: #e63946;
+            color: #fff;
+            font-weight: 500;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #d62828;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Logo">
+            DesiStay
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-house"></i> Homes</a></li>
+                <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="service.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="host.html" class="host">Host Your Home</a>
+            <a href="login.html" class="login">Login</a>
+        </div>
+    </header>
+
+    <!-- Create Listing Form -->
+    <div class="form-container">
+        <h2>Host Your Home</h2>
+        <form>
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Enter title">
+
+            <label for="desc">Description</label>
+            <input type="text" id="desc" placeholder="Enter description">
+
+            <label for="image">Image URL</label>
+            <input type="url" id="image" placeholder="Enter image URL">
+
+            <label for="price">Price</label>
+            <input type="number" id="price" placeholder="Enter price">
+
+            <div class="row">
+                <div>
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter location">
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Enter country">
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Add Listing</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© DesiStay Private Limited</p>
+        <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+</body>
+
+</html>

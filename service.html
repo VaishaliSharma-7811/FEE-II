@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiStay - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        
+
+      
+
+       
+
+        /* Services Section */
+        .services {
+            padding: 2rem 3rem;
+        }
+
+        .services h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .service-info {
+            padding: 1rem;
+        }
+
+        .service-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-info p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .coming-soon {
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Logo">
+            DesiStay
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-house"></i> Homes</a></li>
+                <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="#"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="host.html" class="host">Host your home</a>
+            <a href="login.html" class="login">Login</a>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Services Available</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="https://www.adorama.com/alc/wp-content/uploads/2017/06/7-shutterstock_520015204.jpg"
+                    alt="Photography">
+                <div class="service-info">
+                    <h3>Photography</h3>
+                    <p>1 available</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Chefs">
+                <div class="service-info">
+                    <h3>Chefs</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Meals">
+                <div class="service-info">
+                    <h3>Prepared meals</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/63/9f/04/sakura-massage-spa.jpg?w=900&h=500&s=1"
+                    alt="Massage">
+                <div class="service-info">
+                    <h3>Massage</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b" alt="Training">
+                <div class="service-info">
+                    <h3>Training</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Makeup">
+                <div class="service-info">
+                    <h3>Make-up</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143" alt="Hair">
+                <div class="service-info">
+                    <h3>Hair</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://www.carecredit.com/sites/cc/image/day_spa_treatments.jpg" alt="Spa">
+                <div class="service-info">
+                    <h3>Spa treatments</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088" alt="Catering">
+                <div class="service-info">
+                    <h3>Catering</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR23i-yIAfOobQ1IiAxq-eUme1AKbwfSy9OZQ&s"
+                    alt="Nails">
+                <div class="service-info">
+                    <h3>Nails</h3>
+                    <p class="coming-soon">Coming soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© DesiStay Private Limited</p>
+        <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>

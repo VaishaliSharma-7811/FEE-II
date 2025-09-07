@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiStay - Reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        
+
+       
+
+        /* Navbar */
+        header.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e63946;
+            gap: 0.5rem;
+        }
+
+        .logo img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav ul.nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul.nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: 0.3s;
+        }
+
+        nav ul.nav-links li a i {
+            color: #e63946;
+        }
+
+        nav ul.nav-links li a:hover {
+            color: #e63946;
+        }
+
+        .nav-actions a {
+            margin-left: 1rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-actions .host {
+            color: #e63946;
+        }
+
+        .nav-actions .login {
+            color: #333;
+        }
+
+        .nav-actions a:hover {
+            color: #e63946;
+        }
+
+        /* Review Section */
+        .review-section {
+            width: 100%;
+            max-width: 40%;
+            margin: 4rem auto 2rem auto;
+            background: #fff;
+            padding: 2.5rem 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .review-section h2 {
+            text-align: center;
+            color: #e63946;
+            margin-bottom: 1.5rem;
+        }
+
+        .star-rating {
+            direction: rtl;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            color: #ccc;
+            cursor: pointer;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover~label {
+            color: #FFD700;
+            /* yellow on hover */
+            transform: scale(1.2);
+        }
+
+        .star-rating input:checked~label {
+            color: #FFD700;
+            /* yellow when selected */
+        }
+
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            resize: none;
+            margin-bottom: 1.5rem;
+        }
+
+        button.submit-btn {
+            display: block;
+            width: 150px;
+            margin: 0 auto;
+            padding: 0.8rem 1.5rem;
+            background: #e63946;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button.submit-btn:hover {
+            background: #d62828;
+        }
+
+        
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .review-section {
+                margin: 2rem 1rem;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Logo">
+            DesiStay
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+                <li><a href="review.html"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="service.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="host.html" class="host">Host your home</a>
+            <a href="login.html" class="login">Login</a>
+        </div>
+    </header>
+
+    <!-- Review Form -->
+    <section class="review-section">
+        <h2>Leave a Review</h2>
+
+        <form>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+
+            <textarea name="review" rows="5" placeholder="Write your review here..."></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2025 DesiStay Private Limited</p>
+        <p class="footer-links"><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+</body>
+
+</html>
