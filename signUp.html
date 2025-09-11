@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | DesiStay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="index.css" rel="stylesheet">
+    <style>
+        
+
+        /* Sign Up Form */
+        .signup-container {
+            max-width: 500px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .btn-signup {
+            width: 100%;
+            padding: 14px;
+            background: #e63946;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-signup:hover {
+            background: #d62828;
+        }
+
+        .alt-login {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .alt-login a {
+            color: #e63946;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Logo">
+            DesiStay
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-house"></i> Homes</a></li>
+                <li><a href="review.html"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="service.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="host.html" class="host">Host your home</a>
+            <a href="login.html" class="login">Login</a>
+        </div>
+    </header>
+
+    <!-- Sign Up Form -->
+    <section class="signup-container">
+        <h2>Create Your Account</h2>
+        <form action="login.html" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="" required>
+
+            <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+
+        <div class="alt-login">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© DesiStay Private Limited</p>
+        <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+</body>
+
+</html>
