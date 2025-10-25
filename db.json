@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Simran Anand",
+      "email": "simran@example.com",
+      "username": "simran",
+      "password": "123456"
+    },
+    {
+      "id": "f80f",
+      "username": "vaishali",
+      "email": "vaishali@example.com",
+      "password": "1234"
+    },
+    {
+      "id": "ce17",
+      "username": "rohan",
+      "email": "rohan@example.com",
+      "password": "12345"
+    },
+    {
+      "id": "b1ed",
+      "username": "john due",
+      "email": "john@example.com",
+      "password": "1234567"
+    },
+    {
+      "id": "f083",
+      "username": "abc",
+      "email": "abc@example.com",
+      "password": "123"
+    },
+    {
+      "id": "3fad",
+      "username": "abcd",
+      "email": "abcd@example.com",
+      "password": "123456"
+    }
+  ],
+  "homes": [
+    {
+      "id": "3611",
+      "title": "mountain area",
+      "description": "beautiful hillstation",
+      "image": "",
+      "price": "3000",
+      "location": "mumbai",
+      "country": "india"
+    }
+  ]
+}
