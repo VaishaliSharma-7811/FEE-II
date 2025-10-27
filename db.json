@@ -48,5 +48,16 @@
       "location": "mumbai",
       "country": "india"
     }
+  ],
+  "payments": [
+    {
+      "id": "fb99",
+      "name": "simran",
+      "cardNumber": "1234 4567 8903 3456",
+      "expiry": "04/12",
+      "cvv": "345",
+      "method": "upi",
+      "data": "10/27/2025, 2:25:35 PM"
+    }
   ]
 }
