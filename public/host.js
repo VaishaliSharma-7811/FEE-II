@@ -11,17 +11,39 @@ document.querySelector("#hostForm").addEventListener("submit", async(e) => {
 
     };
 
-    if(
-        !homeData.title ||
-        !homeData.description ||
-        
-        isNaN(homeData.price) ||
-        !homeData.location ||
-        ! homeData.country
-    ) {
-        alert("please fill out all fields correctly before submitting.")
-        return;
-    }
+    const errors = [];
+
+  if (!homeData.title || homeData.title.length < 3) {
+    errors.push("Title must be at least 3 characters.");
+  }
+
+  if (!homeData.description || homeData.description.length < 10) {
+    errors.push("Description must be at least 10 characters.");
+  }
+  
+
+  
+
+  if (!homeData.price || isNaN(homeData.price) || Number(homeData.price) <= 0) {
+    errors.push("Price must be a positive number.");
+  }
+
+  if (!homeData.location || homeData.location.length < 2) {
+    errors.push("Location must be at least 2 characters.");
+  }
+
+  if (!/^[A-Za-z\s]+$/.test(homeData.country) ) {
+    errors.push("Country must be at least 2 characters.");
+  }
+
+  if (errors.length > 0) {
+    alert("⚠ Please fix the following:\n\n" + errors.join("\n"));
+    return;
+  }
+
+
+
+
 
     try {
         const res = await fetch("http://localhost:3001/homes", {
