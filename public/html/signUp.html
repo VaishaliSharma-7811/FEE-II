@@ -4,23 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment | DesiStay</title>
+    <title>Sign Up | DesiStay</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link href="/css/index.css" rel="stylesheet">
     <style>
-       form a {
-            text-decoration: none;
-            margin-left: 12rem;
-            
-            
-        }
-       
         
 
-
-        /* Payment Form */
-        .payment-container {
-            max-width: 600px;
+        /* Sign Up Form */
+        .signup-container {
+            max-width: 500px;
             margin: 100px auto;
             background: #fff;
             padding: 40px;
@@ -28,7 +20,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .payment-container h2 {
+        .signup-container h2 {
             text-align: center;
             margin-bottom: 20px;
             color: #333;
@@ -41,8 +33,7 @@
             color: #333;
         }
 
-        input,
-        select {
+        input {
             width: 100%;
             padding: 12px;
             margin-bottom: 20px;
@@ -52,7 +43,7 @@
             font-size: 14px;
         }
 
-        .btn-pay {
+        .btn-signup {
             width: 100%;
             padding: 14px;
             background: #e63946;
@@ -64,11 +55,21 @@
             transition: 0.3s;
         }
 
-        .btn-pay:hover {
+        .btn-signup:hover {
             background: #d62828;
         }
 
-        
+        .alt-login {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .alt-login a {
+            color: #e63946;
+            font-weight: 600;
+            text-decoration: none;
+        }
 
        
     </style>
@@ -95,34 +96,28 @@
         </div>
     </header>
 
-    <!-- Payment Form -->
-    <section class="payment-container">
-        <h2>Complete Your Payment</h2>
-        <form  id="paymentForm">
-            <label for="name">Name on Card</label>
+    <!-- Sign Up Form -->
+    <section class="signup-container">
+        <h2>Create Your Account</h2>
+        <form  onsubmit="handleSignUp(event)">
+            <label for="name">Username</label>
             <input type="text" id="name" name="name" placeholder="John Doe" required>
 
-            <label for="card-number">Card Number</label>
-            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
 
-            <label for="expiry">Expiry Date</label>
-            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="" required>
 
-            <label for="cvv">CVV</label>
-            <input type="password" id="cvv" name="cvv" placeholder="123" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="" required>
 
-            <label for="payment-method">Payment Method</label>
-            <select id="payment-method" name="payment-method" required>
-                <option value="card">Credit/Debit Card</option>
-                <option value="upi">UPI</option>
-                <option value="netbanking">Net Banking</option>
-            </select>
-           
-                
-           <button type="submit" class="btn-pay">Pay Now</button>
-          
-           
+            <button type="submit" class="btn-signup">Sign Up</button>
         </form>
+
+        <div class="alt-login">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -135,7 +130,10 @@
         <p>© DesiStay Private Limited</p>
         <p><a href="#">Privacy</a> | <a href="#">Terms</a></p>
     </footer>
-<script src="payment.js"></script>
+
+<script src="/js/signup.js"></script>
+
 </body>
+
 
 </html>

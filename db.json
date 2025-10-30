@@ -36,6 +36,12 @@
       "username": "abcd",
       "email": "abcd@example.com",
       "password": "123456"
+    },
+    {
+      "id": "66d0",
+      "username": "simi",
+      "email": "simran@gmail.com",
+      "password": "1234"
     }
   ],
   "homes": [
@@ -99,6 +105,12 @@
       "rating": 2,
       "text": "great!!",
       "date": "2025-10-29T10:09:15.887Z"
+    },
+    {
+      "id": "cbad",
+      "rating": 4,
+      "text": "beautiful place!!",
+      "date": "2025-10-30T04:22:24.590Z"
     }
   ]
 }
