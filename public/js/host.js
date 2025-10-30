@@ -31,10 +31,9 @@ document.querySelector("#hostForm").addEventListener("submit", async(e) => {
   if (!homeData.location || homeData.location.length < 2) {
     errors.push("Location must be at least 2 characters.");
   }
-
-  if (!/^[A-Za-z\s]+$/.test(homeData.country) ) {
-    errors.push("Country must be at least 2 characters.");
-  }
+if (!homeData.country || homeData.country.length < 2) {
+  errors.push("Country must be at least 2 characters.");
+}
 
   if (errors.length > 0) {
     alert("⚠ Please fix the following:\n\n" + errors.join("\n"));

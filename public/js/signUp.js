@@ -15,14 +15,32 @@ async function handleSignUp(event) {
         return;
     }
 
-    const checkRes = await fetch(`http://localhost:3001/users?username=${username}`);
+    if(username.length<3) {
+        alert(`enter valid username`);
+        return;
+    }
+
+    if (!email.includes("@") || !email.includes(".com")) {
+        alert("Please enter a valid email address");
+        return;
+}
+
+
+
+    if (!username || !email || !password || !confirmPassword) {
+       alert("All fields are required");
+       return;
+    }
+    let res;
+    try {
+         const checkRes = await fetch(`http://localhost:3001/users?username=${username}`);
     const existing = await checkRes.json();
     if(existing.length > 0) {
         alert(`username already exists`);
         return;
     }
 
-    const res = await fetch(`http://localhost:3001/users`, {
+    res = await fetch(`http://localhost:3001/users`, {
        method: "POST",
     headers: {
         "Content-Type": "application/json"
@@ -30,15 +48,20 @@ async function handleSignUp(event) {
     body: JSON.stringify({username,email, password })
 });
 
+    } catch(e) {
+        console.error("Sign-up error:", e);
+        alert("Something went wrong. Please try again.");
+    }
+   
 
 if(res.ok) {
     alert('Sign-up successfully');
     console.log("Redirecting to login.html...");
 
-    window.location.href = "login.html";
+    window.location.href = "/html/login.html";
 
 } else {
-    alert("sigm-up failed");
+    alert("sign-up failed");
 }
 
     

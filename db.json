@@ -42,6 +42,30 @@
       "username": "simi",
       "email": "simran@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "993f",
+      "username": "w",
+      "email": "simran@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "876c",
+      "username": "l",
+      "email": "simran@gmail",
+      "password": "1234"
+    },
+    {
+      "id": "30ca",
+      "username": "oiii",
+      "email": "simran@gmail",
+      "password": "1234"
+    },
+    {
+      "id": "3bb6",
+      "username": "ooop",
+      "email": "simran@gmail.com",
+      "password": "1234"
     }
   ],
   "homes": [
@@ -51,6 +75,24 @@
       "description": "beautiful hillstation",
       "image": "",
       "price": "3000",
+      "location": "mumbai",
+      "country": "india"
+    },
+    {
+      "id": "8297",
+      "title": "homess",
+      "description": "beautiful hillstation",
+      "image": "",
+      "price": "6000",
+      "location": "mumbai",
+      "country": "india"
+    },
+    {
+      "id": "11a4",
+      "title": "my house",
+      "description": "beautiful hillstation",
+      "image": "https://images.unsplash.com/photo-1761159023688-03f96bfaa5f2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=600",
+      "price": "5000",
       "location": "mumbai",
       "country": "india"
     }
